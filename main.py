@@ -10,7 +10,7 @@ def get_airplane_mode_status():
 def set_airplane_mode_status(status):
     with open(json_file_path, "r+") as file:
         data = json.load(file)
-        data["airplane_mode"] = "0"
+        data["airplane_mode"] = status
         file.seek(0)
         json.dump(data, file, indent=4)
         file.truncate()
