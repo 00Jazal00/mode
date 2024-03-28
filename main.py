@@ -16,6 +16,7 @@ def set_airplane_mode_status(status):
         file.truncate()
 
 
+os.system("git pull")
 current_status = get_airplane_mode_status()
 if current_status == "1":
     set_airplane_mode_status("0")
