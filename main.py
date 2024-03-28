@@ -18,6 +18,6 @@ def set_airplane_mode_status(status):
 
 os.system("git pull")
 current_status = get_airplane_mode_status()
-if current_status == "1":
-    set_airplane_mode_status("0")
+if current_status == "0":
+    set_airplane_mode_status("1")
     os.system('git add . && git commit -m "Update" && git push')
